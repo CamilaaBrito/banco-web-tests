@@ -6,7 +6,7 @@ describe('Login', () => {
 
   })
 
-  it.only('Login com dados válidos deve permitir entrada no sistema', () => {
+  it('Login com dados válidos deve permitir entrada no sistema', () => {
 
     cy.fixture('credenciais').then(credenciais => {
       cy.get('#username').click().type(credenciais.valida.usuario)
