@@ -13,11 +13,11 @@ describe('Transferencias', () => {
     it('Deve transferir quando informo dados de valor validos', () => {
         cy.get('label[for ="conta-origem"]').parent().as('campo-conta-origem')
         cy.get('@campo-conta-origem').click()
-        cy.get('@campo-conta-origem').contains('Maria Oliveira com saldo').click()
+        cy.get('@campo-conta-origem').contains('Maria Oliveira').click()
 
         cy.get('label[for ="conta-destino"]').parent().as('campo-conta-destino')
         cy.get('@campo-conta-destino').click()
-        cy.get('@campo-conta-destino').contains('João da Silva com saldo').click()   
+        cy.get('@campo-conta-destino').contains('João da Silva').click()   
 
         cy.get('#valor').click().type('12')
         cy.contains('button','Transferir').click()
