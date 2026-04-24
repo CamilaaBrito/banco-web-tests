@@ -84,7 +84,7 @@ Este projeto depende de duas aplicações externas que devem estar rodando local
    - Repository: https://github.com/juliodelimas/banco-web
    - URL padrão: `http://localhost:4000`
 
-## 📦 Instalação
+## Instalação
 
 ### Passo 1: Clonar o Repositório
 
@@ -126,7 +126,7 @@ Este comando irá instalar:
    - Banco Web: http://localhost:4000
    - Banco API: (verificar porta conforme configuração)
 
-## ▶️ Executando os Testes
+## Executando os Testes
 
 ### Scripts Disponíveis
 
@@ -190,7 +190,7 @@ cypress/reports/html/index.html
 
 **Objetivo:** Validar que a aplicação solicita autenticação adicional para transferências acima de R$5.000,00.
 
-## 🛠️ Custom Commands
+##  Custom Commands
 
 Os custom commands são funções reutilizáveis que encapsulam ações repetitivas nos testes. Eles estão organizados em arquivos específicos dentro de `cypress/support/commands/`.
 
@@ -304,7 +304,7 @@ cy.realizarTransferencia('Maria Oliveira', 'João da Silva', 100)
 
 ---
 
-## 📊 Estrutura de Dados
+## Estrutura de Dados
 
 ### Credenciais (fixtures/credenciais.json)
 
@@ -326,7 +326,7 @@ cy.realizarTransferencia('Maria Oliveira', 'João da Silva', 100)
 - **reporter**: Configurado para usar o `cypress-mochawesome-reporter`
 - **setupNodeEvents**: Inicializa o plugin do reporter
 
-## 📝 Padrões de Escrita de Testes
+##  Padrões de Escrita de Testes
 
 Este projeto segue algumas convenções para manter o código organizado:
 
